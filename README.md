@@ -1,0 +1,1 @@
+This repository demonstrates a common CSS bug related to specificity. The `bug.css` file contains code that showcases the unexpected behavior that can result from specificity conflicts.  The `bugSolution.css` file provides possible solutions to address this issue.  Understanding CSS specificity is crucial for avoiding unexpected styling issues.
