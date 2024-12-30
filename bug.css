@@ -1,0 +1,21 @@
+The following CSS code snippet might produce unexpected results in some browsers due to specificity issues:
+
+```css
+div {
+  color: blue;
+}
+
+.my-class {
+  color: red;
+}
+
+#my-id {
+  color: green;
+}
+
+#my-id.my-class {
+  color: purple; /* This rule will override the previous ones */
+}
+```
+
+The issue is that the selector `#my-id.my-class` has higher specificity than the `div`, `.my-class`, and `#my-id` selectors.  In some cases, this might be the intended behavior. However, if the developer expects the inheritance from the `div` element or the specificity to be applied to the other selectors, this will lead to unexpected results. Specificity is a crucial aspect of CSS, and this error highlights that a seemingly small change can yield surprising consequences.
